@@ -3,3 +3,39 @@ body {
     text-align: center;
     color: white;
 }
+
+#sideBar { /* closed by default 8 */
+    color: rebeccapurple;
+    position: fixed;
+
+    top: 0;
+    right: 0px;
+
+    height: 100%;
+    width: 300px;
+
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-color: aquamarine;
+
+    transform: translateX(75%);
+    transition: transform 0.3s ease-in-out;
+
+    display: flex;
+}
+
+#sideBar.open {
+    background-color: red;
+    transform: translateX(0);
+}
+
+#sbHint{
+    width: 25%;
+    background-color: purple;
+}
+
+#sbBody{
+    width: 75%;
+    background-color: bisque;
+}
