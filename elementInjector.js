@@ -27,8 +27,7 @@ async function addElementsFromVault(){
         sideBar.addEventListener('click', toggleSideBar)
         sideBar.state = 'closed';
         document.body.append( sideBar );
-     }
-    
+    }
 }
 
 function toggleSideBar(){toggleSideBar
