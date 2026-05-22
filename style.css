@@ -39,3 +39,11 @@ body {
     width: 75%;
     background-color: bisque;
 }
+
+.img{
+    width: 200px;
+}
+
+#blogListHolder{
+    display: grid;
+}

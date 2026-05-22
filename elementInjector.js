@@ -43,5 +43,39 @@ function toggleSideBar(){toggleSideBar
     }
 }
 
+async function getMDasElemnt(path){
+    var MDChunkElement = "na";
+    const mdPage = await fetch(path);
+    const mdText = await mdPage.text();
+    const mdParse = marked.parse(mdText);
+    
+    const element = document.createElement('div');
+    element.innerHTML = mdParse;
+    $(element).addClass("MdChunk")
+    return element;
+}
+
+async function addMDsAsElemetns(parentElement, folderPath, fileNames){
+    for (const name of fileNames){
+        const path = folderPath + name;
+        const element = await getMDasElemnt(path);
+        console.log(element);
+        parentElement.append(element);
+    }
+}
+
+async function addMDsAsLink(parentElement, folderPath, fileNames){
+    for (const name of fileNames){
+        const path = folderPath + name;
+        const element = $(document.createElement('a'));
+        element.attr("href","BlogHolderPage.html");
+        const displayName = name.replace(/\.md$/, "");
+        element.text(displayName);
+        element.addClass("blogLink")
+        parentElement.append(element);
+        console.log(element);
+    }
+}
+
 addElementsFromVault();
 
