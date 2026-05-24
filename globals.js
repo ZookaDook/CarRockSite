@@ -1,3 +1,5 @@
+/* globals for the project */
+
 
 // get a param from the url
 function getParam(Qname){
