@@ -43,6 +43,12 @@ async function addElementsFromVault(){
     document.body.append( bottomBar );
 }
 
+// adds the bio in
+async function addBio(parentElement){
+    const bio = await getElementFromVault("bio")
+    parentElement.append(bio);
+}
+
 // toggles the sidebar, its in here because the sidebar is added in here
 function toggleSideBar(){toggleSideBar
     const sideBar = $("#sideBar");
@@ -98,4 +104,3 @@ async function addMDsAsLink(parentElement, folderPath, fileNames){
 }
 
 addElementsFromVault();
-
