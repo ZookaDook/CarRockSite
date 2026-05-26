@@ -20,6 +20,7 @@
     transition: transform 0.3s ease-in-out;
 
     display: flex;
+    z-index: 4;
 }
 
 /* sidebard when open, slides out from the side */
@@ -49,4 +50,5 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 5;
 }
