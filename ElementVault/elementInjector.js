@@ -51,16 +51,7 @@ async function addBio(parentElement){
 
 // toggles the sidebar, its in here because the sidebar is added in here
 function toggleSideBar(){toggleSideBar
-    const sideBar = $("#sideBar");
-    const state = sideBar[0].state;
-    if (state == 'closed'){ // to open...
-        sideBar[0].state = 'open';
-        sideBar.addClass('open')
-    }
-    else if (state == 'open'){// to close..
-        sideBar[0].state = 'closed';
-        sideBar.removeClass('open');
-    }
+    $("#sideBar").toggleClass('open');
 }
 
 
@@ -75,7 +66,8 @@ async function getMDasElemnt(path){
     
     const element = document.createElement('div');
     element.innerHTML = mdParse;
-    $(element).addClass("MdChunk")
+    $(element).addClass("MdChunk");
+    makeChildImgsFocusable(element);
     return element;
 }
 
