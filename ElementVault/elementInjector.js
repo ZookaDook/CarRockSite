@@ -41,6 +41,11 @@ async function addElementsFromVault(){
     // bottom bar
     const bottomBar = await getElementFromVault('bottomBar');
     document.body.append( bottomBar );
+
+    // scroll bar
+    const sb = await getElementFromVault('customScroll');
+    scrollBar = sb;
+    document.body.append(sb);
 }
 
 // adds the bio in

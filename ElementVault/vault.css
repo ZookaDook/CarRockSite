@@ -9,7 +9,7 @@
     right: 0px;
 
     height: 100%;
-    width: 300px;
+    width: var(--sidebarWidth);
 
     white-space: nowrap;
     overflow: hidden;
@@ -52,3 +52,21 @@
     width: 100%;
     z-index: 5;
 }
+
+#customScroll{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    z-index: 6;
+}
+
+#customScrollBar{
+    position: relative;
+    background-color: green;
+    z-index: 7;
+    height: 5%;
+    top: 0px;
+}
+
