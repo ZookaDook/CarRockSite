@@ -5,7 +5,7 @@
     color: #F2B712;
     position: fixed;
 
-    top: 0;
+    top: 0px;
     right: 0px;
 
     height: 100%;
@@ -18,7 +18,7 @@
     transition: transform 0.3s ease-in-out;
 
     display: flex;
-    z-index: 4;
+    z-index: 5;
 }
 
 /* sidebard when open, slides out from the side */
@@ -31,24 +31,69 @@
 #sbHint{
     width: 25%;
     background-color: #454545;
+
+    cursor: pointer;
 }
 
 /* the body of the sidebar that is visable when */
 #sbBody{
     width: 75%;
     background-color: #242424;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+a{
+    color: #F2B712;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+a:hover{
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: #454545;
+}
+
+.sideBarBreak{
+    position: relative;
+    width: 90%;
+    height: 0.5px;
+    left: 4%;
+    background-color: #F2B712;
 }
 
 /* ----------- BOTTOM BAR ------------ */
 
 /* the bar on the bottom */
 #bottomBar{
-    background-color: #454545;
+    background-color: #242424;
     position: fixed;
     text-align: left;
     bottom: 0;
     width: 100%;
-    z-index: 5;
+    z-index: 4; 
+    height: 18x;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#bottomBarSep{
+    background-color: #F2B712;
+    height: 1px;
+    width: 100%;
+}
+
+#sideBarSep{
+    position: relative;
+    top: 0%;
+    background-color: #F2B712;
+    width: 1px;
+    height: 100%; /*calc(100% - 19px);*/
 }
 
 #customScroll{
@@ -58,7 +103,6 @@
     width: 2px;
     height: 100%;
     z-index: 6;
-    background-color: #F2B712;
 }
 
 #customScrollBar{
@@ -81,10 +125,6 @@
     transition: all 0.3s ease-in-out;
 }
 
-#sbHint{
-    cursor: pointer;
-}
-
 .Flip{
     rotate: -180deg;
 }
@@ -95,11 +135,32 @@
 }
 
 #bioHolder{
-    background-color: #454545;
+    position: relative;
+
+    outline-style: solid;
+    outline-color: #F2B712;
+    outline-width: 1.5px;
+    border-radius: 4px;
+
+    background-color: #454545bd;
+
+    top: 20px;
+    position: relative;
+    --mdChunkWidth: 80%;
+    width: var(--mdChunkWidth);
+    left: calc( ( (100% - var(--mdChunkWidth) ) / 2 ) - ( 15px ) );
 }
 
 #exTopPannel{
     position: relative;
-    background-color: #454545
+    width: calc(100% - 30px);
+    left: 0px;
 }
 
+.bodySep{
+    background-color: #F2B712;
+    position: relative;
+    height: 1.5px;
+    width: 95%;
+    left: calc(5% / 2);
+}

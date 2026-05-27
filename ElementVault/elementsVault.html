@@ -6,15 +6,17 @@
 
 <!-- The sidebar used to naviatge to diff pages-->
 <div id="sideBar"> 
+    <div id="sideBarSep"> </div>
     <div id="sbHint"> <!-- button to open/close-->
-        <button id='sideBarPopBtn' type="button"> open</button>
+        <p id="sideBarPopBtn"> k </p>
     </div>
     <div id="sbBody"> <!-- all the links -->
-        <a href="/index.html">home</a>
         <br>
-        <a href="/SubPages\textPage.html?bio=false">a page</a>
         <br>
-        <a href="/SubPages\BlogList\BlogList.html">blogs</a>
+        <a href="/index.html?navBar=open">home</a>
+        <a href="/SubPages\textPage.html?bio=false&navBar=open">a page</a>
+        <div class="sideBarBreak"></div>
+        <a href="/SubPages\BlogList\BlogList.html?navBar=open">blogs</a>
     </div>
 </div>
 
@@ -26,6 +28,7 @@
 
 <!-- the bar present at the bottom with contant info-->
 <div id="bottomBar">
+    <div id="bottomBarSep"></div>
     <p> bottomr bar info </p>
 </div>
 

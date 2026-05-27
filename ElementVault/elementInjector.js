@@ -32,10 +32,23 @@ async function getElementFromVault(id){
 async function addElementsFromVault(){
     // Sidebar
     if (getParam('navBar') != 'false'){  // check to see if it should be hidden
+        let closeOnOpen = false;
         const sideBar = await getElementFromVault('sideBar');
-        sideBar.addEventListener('click', toggleSideBar)
+        sideBar.querySelector("#sbHint").addEventListener('click', toggleSideBar)
         sideBar.state = 'closed';
+
+        if( getParam('navBar') == 'open' ){    
+            $(sideBar).addClass('open');
+            $(sideBar.querySelector("#sideBarPopBtn")).toggleClass('Flip');
+            closeOnOpen = true;
+        }
+
         document.body.append( sideBar );
+
+        if(closeOnOpen){
+            sideBar.offsetWidth;
+            toggleSideBar();
+        }
     }
 
     // bottom bar
@@ -55,8 +68,9 @@ async function addBio(parentElement){
 }
 
 // toggles the sidebar, its in here because the sidebar is added in here
-function toggleSideBar(){toggleSideBar
+function toggleSideBar(){
     $("#sideBar").toggleClass('open');
+    $("#sideBarPopBtn").toggleClass('Flip');
 }
 
 
