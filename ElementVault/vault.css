@@ -2,7 +2,7 @@
 
 /* The whole sidebar*/
 #sideBar { /* closed by default */
-    color: red;
+    color: #F2B712;
     position: fixed;
 
     top: 0;
@@ -14,8 +14,6 @@
     white-space: nowrap;
     overflow: hidden;
 
-    background-color: aquamarine;
-
     transform: translateX(75%);
     transition: transform 0.3s ease-in-out;
 
@@ -25,29 +23,29 @@
 
 /* sidebard when open, slides out from the side */
 #sideBar.open {
-    background-color: red;
+
     transform: translateX(0);
 }
 
 /* the small part of the sidebar that is awlays visable */
 #sbHint{
     width: 25%;
-    background-color: purple;
+    background-color: #454545;
 }
 
 /* the body of the sidebar that is visable when */
 #sbBody{
     width: 75%;
-    background-color: bisque;
+    background-color: #242424;
 }
 
 /* ----------- BOTTOM BAR ------------ */
 
 /* the bar on the bottom */
 #bottomBar{
-    background-color: aqua;
-    color: black;
+    background-color: #454545;
     position: fixed;
+    text-align: left;
     bottom: 0;
     width: 100%;
     z-index: 5;
@@ -57,16 +55,51 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 5px;
+    width: 2px;
     height: 100%;
     z-index: 6;
+    background-color: #F2B712;
 }
 
 #customScrollBar{
     position: relative;
-    background-color: green;
+    background-color: #F2B712;
     z-index: 7;
     height: 5%;
     top: 0px;
+}
+
+
+#sideBarPopBtn {
+    position: relative;
+
+    padding-top: 5px;
+    font-family: 'AVA';
+    font-size: 35px;
+    user-select: none;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#sbHint{
+    cursor: pointer;
+}
+
+.Flip{
+    rotate: -180deg;
+}
+
+@font-face {
+    font-family: 'AVA';
+    src: url('/AVA.ttf');
+}
+
+#bioHolder{
+    background-color: #454545;
+}
+
+#exTopPannel{
+    position: relative;
+    background-color: #454545
 }
 
