@@ -38,11 +38,17 @@ margin: 0;
     transform: scale(100%);
     transition: all 0.3s ease-in-out;
 
-
     border-radius: 3px;
     outline-style: solid;
     outline-color: #F2B712;
-    outline-width: 1.5px;;
+    outline-width: 1.5px;
+}
+
+.portfioImg{
+    left: 5%;
+    width: 90%;
+    height: auto;
+    max-height: 700px;
 }
 
 /* for an image while its placeholder for zoom if foucsed */
@@ -107,8 +113,11 @@ html::-webkit-scrollbar {
   display: none;
 }
 
-.imgGrid {
-    /* add stuff here? */
+.imgHolder {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    object-fit: contain;
 }
 
 

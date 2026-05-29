@@ -1,13 +1,13 @@
-## hi
+### hi
 
 here is some text
 
-<div class="imgGrid">
-    <img src="\MarkdownFiles\testImage.jpg" class="img imgCanFocus" alt="test">
-    <img src="\MarkdownFiles\testImage.jpg" class="img imgCanFocus" alt="test">
-    <img src="\MarkdownFiles\testImage.jpg" class="img imgCanFocus" alt="test">
-    <img src="\MarkdownFiles\testImage.jpg" class="img imgCanFocus" alt="test">
-    <img src="\MarkdownFiles\testImage.jpg" class="img imgCanFocus" alt="test">
+<div class="imgHolder">
+    <img src="\MarkdownFiles\testImage.jpg" class="img imgCanFocus portfioImg" alt="test">
+    <img src="\MarkdownFiles\testImage.jpg" class="img imgCanFocus portfioImg" alt="test">
+    <img src="\MarkdownFiles\testImage.jpg" class="img imgCanFocus portfioImg" alt="test">
+    <img src="\MarkdownFiles\testImage.jpg" class="img imgCanFocus portfioImg" alt="test">
+    <img src="\MarkdownFiles\testImage.jpg" class="img imgCanFocus portfioImg" alt="test">
 </div>
 
 dog dogsa 
@@ -17,4 +17,4 @@ asd
 
 sjsjs
 
-## hi 
+### hi 
