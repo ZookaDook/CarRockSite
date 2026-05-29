@@ -6,7 +6,7 @@
     position: fixed;
 
     top: 0px;
-    right: 0px;
+    right: -13px;
 
     height: 100%;
     width: var(--sidebarWidth);
@@ -24,12 +24,12 @@
 /* sidebard when open, slides out from the side */
 #sideBar.open {
 
-    transform: translateX(0);
+    transform: translateX(0px);
 }
 
 /* the small part of the sidebar that is awlays visable */
 #sbHint{
-    width: 25%;
+    width: var(--sideBarHintwidth);
     background-color: #454545;
 
     cursor: pointer;

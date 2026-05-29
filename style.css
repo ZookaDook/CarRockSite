@@ -1,5 +1,6 @@
 :root {
-    --sidebarWidth: 120px;
+    --sidebarWidth: 180px;
+    --sideBarHintwidth: 31.25px;
     --scrollHeight: 50px;
 }
 
