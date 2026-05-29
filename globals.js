@@ -11,6 +11,7 @@ let focusedImage = null;
 let placeholderImg = null;
 
 let scrollBar = null;
+let scrollPrecent = 0;
 
 
 // get a param from the url
@@ -56,6 +57,7 @@ function focusImage(img){
 
     // set the values
     placeholderImg = zoomImg;
+    placeholderImg.removeClass("portfioImg");
     focusedImage = img;
 
     // set events to un focuse
@@ -63,14 +65,18 @@ function focusImage(img){
 
     // starting css
     zoomImg.css({
-        'z-index': '3',
+        'z-index': '10',
         'cursor': 'zoom-out',
-        'position': 'absolute',
-        'top': offset.top + 'px',
-        'left': offset.left + 'px',
-        'width': img.outerWidth(),    
-        'height': img.outerHeight(),  
-        'margin': '0',                
+        'position': 'fixed',
+    
+        'width': '90vw',
+        'height': '90vh',
+        'object': 'cover',
+        'top': '5vh',
+        'left': '5vw',
+
+        'opacity': '0', 
+        'transform': 'scale(3)' 
     });
 
     // add the clone
@@ -81,15 +87,8 @@ function focusImage(img){
 
     // the antimation step 1
     zoomImg.css({
-        'transform': 'scale(2)'
-    });
-    // setp 2
-    zoomImg.one('transitionend', () => { 
-        zoomImg.css({
-            'top': '50%',
-            'left': '50%',
-            'transform': 'translate(-50%, -50%) scale(2)'
-        });
+        'transform': 'scale(1)' ,
+        'opacity': '1'
     });
     
     // hide the og image
@@ -110,7 +109,7 @@ function unFocusImage(){
     // fade out animation
     placeholderImg.css({
         'opacity': '0', 
-        'transform': 'translate(-50%, -50%) scale(3)'         
+        'transform': 'scale(3)'         
     });
 
     // when the antimation is done remove the placeholder from the DOM
@@ -125,7 +124,7 @@ $(window).scroll( () => {
     const scrollTop = $(window).scrollTop();
     const docHeight = $(document).height();
     const winHeight = $(window).height();
-    const scrollPrecent = (scrollTop / (docHeight - winHeight)) * 100;
+    scrollPrecent = (scrollTop / (docHeight - winHeight)) * 100;
     $(scrollBar).css({
         'top': scrollPrecent + '%',
     });
