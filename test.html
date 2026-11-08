@@ -42,9 +42,12 @@ Date: 5/15/26
     <!-- JSfile -->
     <script src="globals.js"></script>
 
-    <!-- tiny script to add in the bio -->
     <script>
-        addBio($("#bioHolder"));
+        addMDsAsLink($("#blogListHolder"), 
+            "/MarkdownFiles/", 
+            ['test.md','test2.md','test3- the name of this file is way longer.md']
+        );
     </script>
+
 </body>
 </html>

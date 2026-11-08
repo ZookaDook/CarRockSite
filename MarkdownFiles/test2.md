@@ -1,7 +1,6 @@
 
 
-### this is another file for a second test
-<h3> text size test </h3>
+# this is another file for a second test
 
 
 a
@@ -13,6 +12,7 @@ a
 a
 a
 a
+asdadasd
 a
 
 <br>
@@ -20,92 +20,3 @@ a
 a
 a
 
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
-<br>
-hi
