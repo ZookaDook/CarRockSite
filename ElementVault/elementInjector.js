@@ -27,12 +27,6 @@ async function getElementFromVault(id){
     }
 }
 
-// adds in elements form the vault, anything in here is just an auto add
-// rn its just the sidebar and the bottom bar
-async function addElementsFromVault(){
-
-}
-
 // adds the bio in
 async function addBio(parentElement){
     const bio = await getElementFromVault("bio")
