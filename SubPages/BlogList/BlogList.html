@@ -22,7 +22,7 @@
     <img src="/header.png" class="btnimg" id="title" alt="Button Image"
     link="/index.html">
 
-    <div class="bioHolder"></div>
+    <div id="bioHolder"></div>
 
     <!-- The div that holds the links to all the blogs -->
     <div id="blogListHolder"class="Container"></div>
@@ -32,12 +32,20 @@
     <script src="/ElementVault\elementInjector.js"></script>
     <script src="/SubPages\Subpage.js"></script>
     
+    <br><br><br><br><br><br><br><br>
+    <br>
+    <br>
+    <br>
+
     <!-- data for the markdowns to be added-->
     <script>
         addMDsAsLink($("#blogListHolder"), 
             "/MarkdownFiles/", 
             ['test.md','test2.md','test3- the name of this file is way longer.md']
         );
+    </script>
+    <script>
+        addBottomBar();
     </script>
 
 </body>

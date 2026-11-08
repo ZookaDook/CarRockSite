@@ -33,6 +33,10 @@ async function addBio(parentElement){
     parentElement.append(bio);
 }
 
+async function addBottomBar(){
+    const bar = await getElementFromVault("BottomBar")
+    $('body').append(bar);
+}
 
 // ---------- MARKDOWN STUFF ----------
 
@@ -71,9 +75,6 @@ async function addMDsAsLink(parentElement, folderPath, fileNames){
         element.text(displayName);
         element.addClass("itemLink")
         parentElement.append(element);
-
-        element.on("mouseover", itemLinkMouseIn);
-        element.on("mouseout", itemLinkMouseOut);
     }
 }
 
