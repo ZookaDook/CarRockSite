@@ -14,15 +14,15 @@ body {
 .btnimg{
     border: none;
     background-color: transparent;
-    image-rendering: pixelated;
+    image-rendering: pixelated; 
     cursor: pointer;
 
-    width: 20vw;
+    width: 27vw;
 }
 
 #title{
     cursor: default;
-    width: 40vw;
+    width: 60vw;
 }
 
 .Container{
@@ -83,6 +83,8 @@ body {
 
     padding-left: 10px;
     text-align: left;
+
+    display: flex;
 }
 
 p{
